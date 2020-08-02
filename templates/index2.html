@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>templates is working</title>
+</head>
+<style>
+    textarea{
+        margin: 0px;
+        width: 1500px;
+        height: 93px;
+    }
+</style>
+<body>
+    <h1>Enter your text below</h1>
+    <form action="/analyze" method='GET'>
+        <textarea name="text" id="" cols="30" rows="10"></textarea>
+        <input type="checkbox" name="removepunc"> Remove punctuations <br>
+        <input type="checkbox" name="fullcaps">UPPERCASE <br>
+        <input type="checkbox" name="newlineremover">New line remover <br>
+        <input type="checkbox" name="spaceremover">Extra Spaces Remover <br>
+        <input type="checkbox" name="charcount">Character Counter <br>
+
+        <button type="submit">Analyse text</button>
+    </form>
+</body>
+</html>
